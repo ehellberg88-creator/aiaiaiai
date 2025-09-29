@@ -261,13 +261,8 @@
             height: 10rem;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: var(--shadow-soft);
-            border: 4px solid rgba(255, 255, 255, 0.2);
-            transition: var(--transition-smooth);
-        }
-        
-        .profile-img:hover {
-            transform: scale(1.05);
+            display: block;
+            flex-shrink: 0;
         }
         
         .engagement-img {
@@ -335,8 +330,8 @@
             color: inherit;
             text-decoration: none;
         }
-        
-        a:hover {
+
+        a:hover:not(.btn) {
             color: var(--primary);
         }
         
